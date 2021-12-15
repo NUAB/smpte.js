@@ -8,10 +8,37 @@ Easily deal with Timecode SMPTE format in js. If you need a PHP lib, check out [
 ## Installation
 
 Using `npm` or `yarn`:
-```
+```bash
 npm install smpte.js
 
 yarn add smpte.js
+```
+
+## Build instructions
+
+Using `yarn`:
+
+```bash
+# Checkout code from github
+git clone git@github.com:NUAB/smpte.js.git
+cd smpte.js
+
+# Do your changes
+
+# Push changes to github
+git commit -a
+git push origin
+
+# Push changes to NPM
+yarn login
+
+export NODE_OPTIONS=--openssl-legacy-provider && yarn publish --access public
+
+# After publishing to NPM add tag to git repo with version
+git commit -a
+git tag 'vx.y.z'
+git push origin
+
 ```
 
 ## Usage
