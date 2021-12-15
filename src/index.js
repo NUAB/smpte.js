@@ -127,7 +127,7 @@ SMPTE.isTimecodeFormatValid = function (timecode, df) {
         return false;
     }
 
-    return /^(?:[0-1][0-9]|2[0-3])(:|;)(?:[0-5][0-9])\1(?:[0-5][0-9])(:|;)(?:[0-2][0-9])$/.test(timecode);
+    return /^(?:[0-1][0-9]|2[0-3])(:|;)(?:[0-5][0-9])\1(?:[0-5][0-9])(:|;)(?:[0-5][0-9])$/.test(timecode);
 };
 
 /**
