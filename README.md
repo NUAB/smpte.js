@@ -14,6 +14,17 @@ npm install smpte.js
 yarn add smpte.js
 ```
 
+## Build instructions
+
+Using `yarn`:
+
+```
+yarn login
+
+export NODE_OPTIONS=--openssl-legacy-provider && yarn publish --access public
+
+```
+
 ## Usage
 
 ### Example
